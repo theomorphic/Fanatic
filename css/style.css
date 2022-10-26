@@ -273,9 +273,73 @@ header::after {
 .buy__inner {
   display: flex;
   align-items: center;
-  gap: 115px;
+  gap: 97px;
 }
 
 .buy__content {
-  width: 484px;
+  width: 502px;
+  position: relative;
+}
+
+.buy__title {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #0093A1;
+  font-family: "Comfortaa" cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+}
+
+.buy__list {
+  margin-bottom: 25px;
+}
+
+.buy__item {
+  margin-bottom: 25px;
+  width: 284px;
+  cursor: default;
+}
+
+.buy__item:hover .buy__item-title {
+  color: #0093A1;
+}
+
+.buy__item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transition: color 0.3;
+}
+
+.buy__price {
+  position: absolute;
+  right: 0;
+  bottom: 130px;
+}
+
+.buy__btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Comfortaa" cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+  color: #0093A1;
+  padding: 18px;
+  text-align: center;
+  max-width: 484px;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #0093A1;
+  transition: 0.3s ease;
+}
+
+.buy__btn:hover {
+  background-color: #B9C400;
+  color: #262C27;
+  border-color: #B9C400;
 }/*# sourceMappingURL=style.css.map */
