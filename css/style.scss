@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before{
+	box-sizing: border-box;
+}
+
+body{
+	// font-family: 'Comfortaa', cursive;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #262C27;
+}
+
+a{
+	text-decoration: none;
+	color:inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container{
+	max-width: 1230px; //по 15 на падинг еще
+	padding: 0 15px; //чтобы по бокам не прилипал
+	margin: 0 auto;
+}
+
+.header{
+	background-image: url(../img/header-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	background-position: center;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+header::before{
+	content: "";
+	position: absolute;
+	background-image: url(../img/header-decor.svg);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 456px;
+	background-size: cover;
+	background-position: center;
+	transform: translateY(35%);
+	z-index: 2;
+}
+
+header::after{
+	content: "";
+	position: absolute;
+	background-image: url(../img/header-decor.svg);
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 456px;
+	background-size: cover;
+	background-position: center;
+	transform: translateY(75%) rotate(180deg);
+	z-index: 3;
+}
+
+.header__top{
+	display: flex;
+	align-items: center;
+	padding: 57px 0;
+	gap: 100px;
+	justify-content: flex-end;
+
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 22px;
+}
+
+.logo path{
+	transition: fill .3s ease;
+}
+
+.logo:hover path{
+	fill: #0093A1;
+}
+
+.header__btn{
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #262C27;
+	padding: 12px 77px 9px 71px;
+	cursor: pointer;
+}
+
+// .header__phone:hover{
+// 	font-size: 24px;
+// 	line-height: 27px;
+// }
+
+.header__content{
+	min-height: calc(100vh - 162px);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.header__content-box{
+	max-width: 548px;
+	text-align: center;
+	color: #fff;
+	margin-right: 30px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+
+	.header__title{
+		text-transform: uppercase;
+		font-size: 64px;
+		line-height: 71px;
+		margin-bottom: 20px;
+	}
+
+	.header-text{
+		font-size: 24px;
+		line-height: 27px;
+		margin-bottom: 20px;
+	}
+}
+
+
+.header__decor-text{
+	position: absolute;
+	bottom: 25px;
+	color: #0093A1;
+}
+
+.header__decor-text--one{
+	z-index: 1;
+	right: 145px;
+	bottom: 120px;
+}
+
+.header__decor-text--one,
+.header__decor-text--two{
+	font-family: 'Comfortaa' cursive;
+	font-weight: 400;
+	font-size: 130px;
+	line-height: 145px;
+	opacity: .3;
+}
+
+.header__decor-text--two{
+	z-index: 4;
+	left: 265px;
+	bottom: 0;
+}
+
+.header__decor-text--three{
+	max-width: 359px;
+	right: 145px;
+	z-index: 4;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 39px;
+	text-align: center;
+}
+
+.info{
+	background-image: url(../img/info-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin-top: 90px;
+}
+
+.info::before{
+	content: "";
+	position: absolute;
+	height: 180px;
+	background-color: #262C27;
+	top: 0;
+	left: 0;
+	right: 0;
+	transform: translateY(-180px);
+	z-index: 1;
+}
+
+.info__top{
+	display: flex;
+	gap: 80px;
+	padding-top: 100px;
+	margin-bottom: 69vh;
+}
+
+.info__top-text{
+	padding-top: 245px;
+	width: 290px;
+	color: #fff;
+	position: relative;
+}
+
+.info__top-text--one{
+	padding-bottom: 125px;
+}
+
+.info__top-text--two{
+	border-bottom: 1px solid #fff;
+}
+
+.info__top-img{
+	position: relative;
+	z-index: 6;
+}
+
+.popup-btn{
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+
+	span{
+		padding-top: 12px;
+		display: block;
+		color: #fff;
+	}
+}
+
+.info__btn{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.info__specs{
+	display: flex;
+	align-items: center;
+	gap: 130px;
+	color:#fff;
+	padding-bottom: 50px;
+}
+
+.info__specs-title{
+	text-transform: uppercase;
+	font-family: 'Comfortaa' cursive;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 67px;
+	width: 250px;
+}
+
+.info__specs-list{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 30px 0;
+	width: 565px;
+	font-weight: 700;
+}
+
+.info__specs-item{
+	margin-bottom: 15px;
+	display: flex;
+	gap: 25px;
+}
+
+.info__specs-caption{
+	width: 185px;
+}
+
+.buy{
+	padding: 150px 0;
+}
+
+.buy__inner{
+	display: flex;
+	align-items: center;
+	gap: 115px;
+}
+
+.buy__content{
+	width: 484px;
+}
