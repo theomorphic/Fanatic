@@ -10,6 +10,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #262C27;
+  cursor: default;
 }
 
 a {
@@ -299,7 +300,6 @@ header::after {
 .buy__item {
   margin-bottom: 25px;
   width: 284px;
-  cursor: default;
 }
 
 .buy__item:hover .buy__item-title {
