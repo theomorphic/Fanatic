@@ -598,4 +598,39 @@ header::after {
 
 .footer__logo:hover path {
   fill: #0093A1;
+}
+
+@media (max-width: 1230px) {
+  .header__decor-text--two {
+    left: 0;
+  }
+}
+@media (max-width: 834px) {
+  .header__decor-text {
+    display: none;
+  }
+}
+@media (max-width: 706px) {
+  .header__top {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 90px;
+  }
+  .header__btn {
+    width: 70%;
+  }
+  .header__content-box {
+    margin-right: 0;
+  }
+}
+@media (max-width: 414px) {
+  .header__content {
+    z-index: 5;
+  }
+}
+@media (max-width: 375px) {
+  .header__title {
+    font-size: 55px;
+    line-height: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
