@@ -604,6 +604,74 @@ header::after {
   .header__decor-text--two {
     left: 0;
   }
+  .buy__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buy__img {
+    order: -1;
+    max-width: 100%;
+  }
+  .buy__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buy__item {
+    width: 100%;
+    max-width: 600px;
+  }
+  .buy__price {
+    padding-right: 25px;
+  }
+  .buy__list {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 1275px) {
+  .gallery__box {
+    flex-wrap: wrap;
+  }
+  .gallery-min {
+    margin-top: 0;
+    width: 90%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .gallery__text {
+    width: 100%;
+  }
+  .gallery-min__img {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+@media (max-width: 1000px) {
+  .info__top {
+    display: block;
+  }
+  .info__top-text {
+    width: 100%;
+  }
+  .info__top-text--two {
+    padding-bottom: 25px;
+    padding-top: 45px;
+  }
+  .info__top-img {
+    display: block;
+    margin: 0 auto;
+    width: 227px;
+  }
+  .info__specs {
+    display: block;
+  }
+}
+@media (max-width: 924px) {
+  .buy__price {
+    bottom: auto;
+    top: -353px;
+  }
 }
 @media (max-width: 834px) {
   .header__decor-text {
@@ -622,15 +690,61 @@ header::after {
   .header__content-box {
     margin-right: 0;
   }
+  .buy__price {
+    top: -200px;
+  }
+  .buy__price img {
+    max-width: 85%;
+    max-height: 85%;
+  }
+}
+@media (max-width: 630px) {
+  .info__specs-list {
+    width: 100%;
+  }
+  .info__specs-item {
+    display: block;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .gallery-min {
+    padding: 20px 10px 20px;
+    gap: 10px;
+  }
+  .gallery-min::before {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .buy__price {
+    top: -165px;
+  }
+  .buy__price img {
+    max-width: 65%;
+    max-height: 65%;
+  }
 }
 @media (max-width: 414px) {
   .header__content {
     z-index: 5;
+  }
+  .technology__title {
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 @media (max-width: 375px) {
   .header__title {
     font-size: 55px;
     line-height: 60px;
+  }
+  .buy__price {
+    padding-right: 0;
+  }
+  .buy__price img {
+    max-width: 50%;
+    max-height: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
